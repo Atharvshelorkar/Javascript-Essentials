@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <p>The const keyword currently declares the constant in the function scope</p>
+        <p>It then goes on to say: const is going to be defined by ECMAScript 6, but with different semantics. Similar to variables declared with the let statement, constants declared with const will be block-scoped.</p>
+    </head>
+    <body>
+        <script>
+            const x = 22; 
+    { 
+        const x = 90; 
+        console.log(x); 
+   
+        { 
+            const x = 77; 
+            console.log(x); 
+        } 
+        { 
+            const x = 45; 
+            console.log(x); 
+        } 
+    } 
+    console.log(x); 
+        </script>
+    </body>
+</html>
